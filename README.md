@@ -6,7 +6,7 @@
 
 ## 🌐 LIVE DEMO
 
-**[View the Portfolio](https://free-portfolio-aayush.vercel.app/)**
+**[View the Portfolio](https://dev-vikash.netlify.app/)**
 
 ---
 
@@ -32,7 +32,7 @@ If you find this project useful or interesting, please consider giving it a star
 - **Blazing Fast Performance:** Optimized to ensure a smooth, seamless experience for all users.
 - **Detailed Documentation:** Step-by-step instructions for setup, customization, and further development.
 
-Check out the demo: **[Click here](https://free-portfolio-aayush.vercel.app/)**
+Check out the demo: **[Click here](https://dev-vikash.netlify.app/)**
 
 ---
 
@@ -48,8 +48,8 @@ Check out the demo: **[Click here](https://free-portfolio-aayush.vercel.app/)**
 
 For any inquiries or feedback, feel free to reach out:
 
-- **Email**: [iAayushBharti@gmail.com](mailto:iAayushBharti@gmail.com)
-- **LinkedIn**: [Aayush Bharti on LinkedIn](https://www.linkedin.com/in/iaayushbharti/)
+- **Email**: [iAayushBharti@gmail.com](mailto:vks200506@gmail.com)
+- **LinkedIn**: [Aayush Bharti on LinkedIn](www.linkedin.com/in/vikash-kumar-singh-784146290)
 
 ---
 
