@@ -1293,6 +1293,19 @@ a {
   background: linear-gradient(rgb(5, 5, 5), rgb(8, 8, 8), rgb(12, 12, 12), rgb(15, 15, 15));
   padding: 8rem 0;
   position: relative;
+  overflow: hidden;
+}
+
+.space3 video {
+  position: absolute;
+  width: 120%;
+  top: 50%;
+  left: 50%;
+  filter: opacity(60%);
+  filter: contrast(120%);
+  transform: translate(-50%, -50%) scale(0.8) rotate(45deg);
+  z-index: 0;
+  opacity: 60%;
 }
 
 .experienceTitle {
@@ -1308,6 +1321,8 @@ a {
   text-transform: uppercase;
   font-family: 'Catamaran', sans-serif;
   margin-bottom: 5rem;
+  position: relative;
+  z-index: 2;
 }
 
 .experienceContainer {
@@ -1317,6 +1332,8 @@ a {
   max-width: 900px;
   margin: 0 auto;
   padding: 0 2rem;
+  position: relative;
+  z-index: 2;
 }
 
 .experienceCard {
@@ -1475,6 +1492,19 @@ a {
   background: linear-gradient(rgb(15, 15, 15), rgb(10, 10, 10), rgb(5, 5, 5), black);
   padding: 8rem 0;
   position: relative;
+  overflow: hidden;
+}
+
+.space4 video {
+  position: absolute;
+  width: 150%;
+  top: 50%;
+  left: 50%;
+  filter: opacity(70%);
+  filter: contrast(130%);
+  transform: translate(-50%, -30%) scale(1.2);
+  z-index: 0;
+  opacity: 70%;
 }
 
 .enhancedSkillsTitle {
@@ -1490,6 +1520,8 @@ a {
   text-transform: uppercase;
   font-family: 'Catamaran', sans-serif;
   margin-bottom: 5rem;
+  position: relative;
+  z-index: 2;
 }
 
 .skillsGrid {
@@ -1499,6 +1531,8 @@ a {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 2rem;
+  position: relative;
+  z-index: 2;
 }
 
 .skillCategory {
@@ -1657,6 +1691,7 @@ a {
   background: linear-gradient(black, rgb(5, 5, 5), rgb(10, 10, 10), rgb(15, 15, 15));
   padding: 8rem 0;
   position: relative;
+  overflow: hidden;
 }
 
 .testimonialsBackground {
@@ -1667,6 +1702,18 @@ a {
   position: relative;
 }
 
+.space5 video {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  filter: opacity(50%);
+  filter: contrast(110%);
+  transform: translate(-50%, -60%) scale(1.5) rotate(180deg);
+  z-index: 0;
+  opacity: 50%;
+}
+
 .testimonialsBackground::before {
   content: '';
   position: absolute;
@@ -1675,6 +1722,7 @@ a {
   right: 0;
   bottom: 0;
   background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(8, 8, 8, 0.7), rgba(0, 0, 0, 0.8));
+  z-index: 1;
 }
 
 .testimonialsTitle {
@@ -1691,7 +1739,7 @@ a {
   font-family: 'Catamaran', sans-serif;
   margin-bottom: 5rem;
   position: relative;
-  z-index: 2;
+  z-index: 3;
 }
 
 .testimonialsContainer {
@@ -1702,7 +1750,7 @@ a {
   margin: 0 auto;
   padding: 0 2rem;
   position: relative;
-  z-index: 2;
+  z-index: 3;
 }
 
 .testimonialCard {
@@ -1741,7 +1789,7 @@ a {
 .testimonialContent {
   padding: 2.5rem;
   position: relative;
-  z-index: 2;
+  z-index: 4;
 }
 
 .testimonialQuote {
@@ -1813,6 +1861,23 @@ a {
   filter: contrast(105%);
   position: absolute;
   z-index: 1;
+}
+
+@media (max-width: 900px) {
+  .space3 video {
+    transform: translate(-50%, -50%) scale(1.2) rotate(45deg);
+    width: 150%;
+  }
+  
+  .space4 video {
+    transform: translate(-50%, -30%) scale(1.5);
+    width: 200%;
+  }
+  
+  .space5 video {
+    transform: translate(-50%, -60%) scale(2) rotate(180deg);
+    width: 150%;
+  }
 }
 
 @media (max-width: 900px) {
