@@ -4,7 +4,7 @@ run-name: Deploying ${{ github.ref_name }} by ${{ github.actor }}
 on:
   push:
     branches:
-      - "feature/changes"
+      - feature/changes
       
 jobs:
   deploy:
