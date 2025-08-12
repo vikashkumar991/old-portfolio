@@ -92,3 +92,82 @@ function highlightNavLink() {
 }
 
 window.addEventListener('scroll', highlightNavLink);
+
+// Skill progress bar animation
+function animateSkillBars() {
+  const skillBars = document.querySelectorAll('.skillProgressBar');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const width = entry.target.getAttribute('data-width');
+        entry.target.style.width = width + '%';
+      }
+    });
+  }, { threshold: 0.5 });
+
+  skillBars.forEach(bar => observer.observe(bar));
+}
+
+// Initialize skill bar animations
+document.addEventListener('DOMContentLoaded', animateSkillBars);
+
+// Add floating animation to experience cards
+function addFloatingAnimation() {
+  const cards = document.querySelectorAll('.experienceCard, .testimonialCard');
+  cards.forEach((card, index) => {
+    card.style.animationDelay = `${index * 0.2}s`;
+    card.classList.add('floating-card');
+  });
+}
+
+// Add CSS for floating animation
+const floatingStyle = document.createElement('style');
+floatingStyle.textContent = `
+  .floating-card {
+    animation: floatCard 6s ease-in-out infinite;
+  }
+  
+  @keyframes floatCard {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+  }
+`;
+document.head.appendChild(floatingStyle);
+
+// Initialize floating animation
+document.addEventListener('DOMContentLoaded', addFloatingAnimation);
+
+// Testimonials auto-scroll (optional)
+function initTestimonialsScroll() {
+  const container = document.querySelector('.testimonialsContainer');
+  if (!container) return;
+  
+  let isScrolling = false;
+  
+  container.addEventListener('mouseenter', () => {
+    isScrolling = false;
+  });
+  
+  container.addEventListener('mouseleave', () => {
+    isScrolling = true;
+  });
+}
+
+// Initialize testimonials scroll
+document.addEventListener('DOMContentLoaded', initTestimonialsScroll);
+
+// Add parallax effect to background elements
+function addParallaxEffect() {
+  window.addEventListener('scroll', () => {
+    const scrolled = window.pageYOffset;
+    const parallaxElements = document.querySelectorAll('.experienceFadedText, .enhancedSkillsFadedText, .testimonialsFadedText');
+    
+    parallaxElements.forEach(element => {
+      const speed = 0.5;
+      element.style.transform = `translateY(${scrolled * speed}px)`;
+    });
+  });
+}
+
+// Initialize parallax effect
+document.addEventListener('DOMContentLoaded', addParallaxEffect);
